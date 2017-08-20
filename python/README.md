@@ -13,6 +13,9 @@ imperative, functional, and procedural
 ## Running the program
 
 After [downloading Python 3.6+](https://www.python.org/downloads/release/python),
-you can run this file from the command line with:
+you can run this file from the command line by typing:
 
 `python3 guess.py`
+
+Alternatively, you can run the program online at:
+https://repl.it/KRT9/8
