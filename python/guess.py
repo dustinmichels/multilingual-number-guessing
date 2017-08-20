@@ -2,9 +2,9 @@
 Number guessing game for Python 3.6+
 
 Generates a (pseudo)random number between 1 and 100, then prompts
-the user for guesses until the correct number is found
+the user for guesses until the correct number is found.
 
-Run from the command line by typing: `python3 guess.py`
+Run from the command line by typing: `python3 guess.py`.
 
 Dustin Michels
 August 2017
