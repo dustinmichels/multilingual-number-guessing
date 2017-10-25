@@ -16,7 +16,7 @@ int main() {
 
 	// Set max size of random number
 	max_size = 101;
-
+	
 	// Generate random num (not the optimal way...)
 	srand(time(NULL));
 	num = rand() % max_size;
@@ -24,9 +24,6 @@ int main() {
 	// Print welcome message
 	printf("Hi! I'm thinking of a number between 0 and 100. ");
 	printf("Can you guess it??\n");
-
-	// Temp
-	printf("...................The random number is: %d\n", num);
 
 	do {
 		printf("\nPlease enter your guess: ");
