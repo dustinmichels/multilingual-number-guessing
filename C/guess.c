@@ -2,6 +2,7 @@
 # include <stdlib.h>
 # include <time.h>
 # include <ctype.h>
+#include <errno.h>
 
 # define BUFFER 100
 
@@ -31,15 +32,19 @@ int main() {
 		printf("\nPlease enter your guess: ");
 
 		if (fgets(input, sizeof(input), stdin) != NULL) {
-			printf("->input: %s\n", input);
+
+			// reset errno
+			errno = 0;
 
 			// convert string to int
+			// If successful, check number.
 			guess = strtol(input, NULL, 10);
-			printf("->guess: %d\n", guess);
-
-			checkNumber(guess, num);
+			if (errno == EINVAL) {
+				printf("Oops! That doesn't look valid!\n");
+			} else {
+				checkNumber(guess, num);
+			}
 		}
-
 	} while (guess != num);
 
 	return 0;
@@ -47,12 +52,10 @@ int main() {
 
 void checkNumber(int guess, int num) {
 
-	printf("guess: %d\n", guess);
-
 	if (guess < num) {
-		printf("Higher...\n");
+		printf("Higher than %d...\n", guess);
 	} else if (guess > num) {
-		printf("Lower...\n");
+		printf("Lower than %d...\n", guess);
 	} else if (guess == num) {
 		printf("Yeah! It was %d!\n\n", num);
 	}
