@@ -4,10 +4,12 @@
 ;; Number Guessing
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-#|--------------------
-Set up
---------------------|#
+#|-----------
+Key functions
+-----------|#
 
+;; Check user input against my_num
+;; If not equal, call `get-input`
 (define check-input
   (lambda (input)
     (cond ((eq? input my_num)
@@ -21,7 +23,8 @@ Set up
            (display "Higher...")
            (newline)
            (get-input)))))
-          
+
+;; Get user input and pass it to `check-input`
 (define get-input
   (lambda ()
     (display "Guess: ")
