@@ -12,7 +12,7 @@ void checkNumber();
 int main() {
   int num, guess, max_size;
   char input[BUFFER];
-  char *end;;
+  char *end;
 
   // Set max size of random number
   max_size = 101;
