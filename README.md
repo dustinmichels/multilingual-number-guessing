@@ -16,6 +16,8 @@ to make guesses until the correct number is reached.
 
 ## Current Entries ##
 
+(In the order they were added to this repo).
+
 | Language | Link | Keywords | Developed |
 |----------|------|----------|-----------|
 | Python   | [<img src="https://camo.githubusercontent.com/7417b0470817fcadad401644c66f33e08bd7b8b4/68747470733a2f2f7777772e707974686f6e2e6f72672f7374617469632f636f6d6d756e6974795f6c6f676f732f707974686f6e2d6c6f676f2d6d61737465722d76332d544d2e706e67" alt="Python logo" height=80px>](https://github.com/dustinmichels/number-guessers/tree/master/Python)|High-level, imperative, object-oriented, interpreted, dynamically-typed | Guido van Rossum (Centrum Wiskunde & Informatica, 1989) |
@@ -24,4 +26,7 @@ to make guesses until the correct number is reached.
 | Scheme        |[<img src="https://camo.githubusercontent.com/2e0056ae8c0e880f9d50db22989e7352b839f2a4/68747470733a2f2f7777772e636f6d7075746572686f70652e636f6d2f6a6172676f6e2f732f736368656d652e6a7067" alt="Scheme logo" height=80px>](https://github.com/dustinmichels/number-guessers/tree/master/Scheme)|Functional, minimalist, dialect of Lisp.| Guy L. Steele and Gerald Jay Sussman (MIT AI Lab, 1970s) |
 | Bash        |[<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Gnu-bash-logo.svg" alt="Scheme logo" height=80px>](https://github.com/dustinmichels/number-guessers/tree/master/Bash)|Unix shell and command language|  Brian Fox, for the GNU project (1989) |
 | Elixir        |[<img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Elixir_programming_language_logo.png" alt="Elixir logo" height=80px>](https://github.com/dustinmichels/number-guessers/tree/master/Elixir)|Functional, concurrent, general-purpose programming language that runs on the Erlang virtual machine (BEAM).| José Valim (Plataformatec, 2011) |
+| Javascript        |[<img src=https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Javascript logo" height=80px>](https://github.com/dustinmichels/number-guessers/tree/master/javascript)| High-level, interpreted, dynamic, weakly typed. Core technology of Web. | Brendan Eich (Netscape Communications, 1995) |
+
+
 
