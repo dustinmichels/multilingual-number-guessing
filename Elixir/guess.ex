@@ -3,7 +3,11 @@ defmodule Guess do
   A simple number guessing game.
   """
 
-  # Q: is it tail call optimized? Should use try/rescue instead?
+  @doc """
+  Prompts user for a guess until an integer is given.
+  Returns guess.
+  Q: is it tail call optimized? Should use try/rescue instead?
+  """
   def get_guess do
     response = IO.gets "Guess a number between 1 and 100: "
     case Integer.parse(response) do
@@ -15,7 +19,7 @@ defmodule Guess do
   end
 
   @doc """
-  Solicits user guess, then checks it against secret number
+  Solicits user guess, then checks it against secret number.
   Returns the number of guesses made
   """
   def guess_and_check(secret_number) do
@@ -29,6 +33,10 @@ defmodule Guess do
     end
   end
 
+  @doc """
+  Chooses secret number at random, sets off calls to `guess_and_check`.
+  Prints welcome/closing messages.
+  """
   def start do
     secret_number = Enum.random(0..100)
     IO.puts "Welcome to a number guessing game in... elixir!"
