@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+  <h1>Number Guesser!</h1>
+  <script>
+    "use strict";
+    function guessNumber() {
+      const secretNum = Math.ceil(Math.random() * 100);
+      let guessCount = 0;
+      let guess = parseInt(prompt('Guess the number between 1 and 100'));
+      while (guess != secretNum) {
+        if (isNaN(guess)) {
+          alert("Oops. That doesn't look like a number");
+        }
+        else {
+          guessCount++;
+          let msg = guess < secretNum ? "higher" : 'lower';
+          alert(`Try going ${msg}!`);
+        }
+        guess = parseInt(prompt('Guess the number between 1 and 100'));
+      }
+      alert(`Congratulations!\nThe number was ${secretNum}.` +
+        `\nYou got it in ${guessCount} tries.`);
+    }
+    guessNumber();
+  </script>
+</body>
+</html>
