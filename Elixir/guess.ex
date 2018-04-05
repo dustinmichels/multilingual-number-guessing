@@ -18,18 +18,19 @@ defmodule Guess do
     end
   end
 
+
   @doc """
   Solicits user guess, then checks it against secret number.
   Returns the number of guesses made
   """
-  def guess_and_check(secret_number) do
+  def guess_and_check(secret_number, guess_count) do
     guess = get_guess()
     if guess == secret_number do
-      1
+      guess_count
     else
       msg = if guess < secret_number, do: "higher!", else: "lower!"
       IO.puts "  You guessed #{guess}... Go #{msg}"
-      1 + guess_and_check(secret_number)
+      guess_and_check(secret_number, guess_count + 1)
     end
   end
 
@@ -40,7 +41,7 @@ defmodule Guess do
   def start do
     secret_number = Enum.random(0..100)
     IO.puts "Welcome to a number guessing game in... elixir!"
-    guess_count = guess_and_check(secret_number)
+    guess_count = guess_and_check(secret_number, 0)
     IO.puts "Yeah!! The secret number was #{secret_number}."
     IO.puts "You got it in #{guess_count} tries."
   end
